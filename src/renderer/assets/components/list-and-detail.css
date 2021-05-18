@@ -15,6 +15,8 @@
 .title {
   padding-bottom: 25px;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .chinese, .right {
@@ -26,6 +28,8 @@
   /* 置右＋白色 */
   letter-spacing: 3px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .left .chinese {
@@ -45,7 +49,7 @@ a.right span {
   font-size: 2rem;
 }
 
-.activity-layout hr {
+hr {
   margin-bottom: 70px;
   color: white;
   border: 4px;
@@ -69,4 +73,8 @@ a.right span {
   hr {
     display: none;
   }
+}
+
+.activity-layout {
+  margin-top: -30vh;
 }

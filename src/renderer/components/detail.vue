@@ -1,7 +1,7 @@
 <template lang="pug">
   .activity-layout
-    .container.d-flex.title.justify-content-between
-      .left.d-flex.flex-column
+    .container.title-section.title
+      .left
         span.chinese {{titleId}}
         span.english {{titleEn}}
       .right
@@ -89,5 +89,10 @@ export default {
 }
 .right span:hover {
   color: yellow;
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

@@ -1,7 +1,7 @@
 <template lang="pug">
   .activity-layout
-    .container.d-flex.title.justify-content-between
-      .left.d-flex.flex-column
+    .container.title
+      .left
         span.chinese {{titleZh}}
         span.english {{titleEn}}
       nuxt-link.right.hover-bounce(to="/")
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/components/list-and-detail.css";
+@import "~/assets/components/list-and-detail.css";
 
 .activity {
   display: flex;
@@ -51,3 +51,4 @@ a.class-room span {
   font-size: 2rem;
 }
 </style>
+
