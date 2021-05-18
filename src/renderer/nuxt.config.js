@@ -18,14 +18,32 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    head: {
+      title: '畢業DVD',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'og:title'  , property: 'og:title', content: '畢業DVD' },
+        { hid: 'description', name: 'description', content: '畢業光碟' },
+        { hid: 'og:description', property: 'og:description', content: '畢業光碟' },
+        { hid: 'og:type' , property: 'og:type' , content: 'website'},
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'
+        },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ]
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/assets/mixins/base.scss',
-    '~/assets/mixins/font.scss',
-    '~/assets/mixins/anime.scss',
+    '~/assets/mixins/base.css',
+    '~/assets/mixins/font.css',
+    '~/assets/mixins/anime.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -86,4 +104,5 @@ export default {
     dir: '../../dist/nuxt-build',
   },
   telemetry: false,
+
 }

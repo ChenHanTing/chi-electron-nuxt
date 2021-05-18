@@ -28,7 +28,7 @@
 
 <style scoped>
 .chi-layout {
-  padding-top: 10vh;
+  padding-top: 30vh;
   height: 130vh;
   width: 100vw;
   overflow: hidden;

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.activity-layout {
+  /* 垂直置中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 總高度 */
+  height: 100vh;
+  flex-direction: column;
+  /* 提供hr定位 */
+  position: relative;
+}
+
+.title {
+  padding-bottom: 25px;
+  color: white;
+}
+
+.chinese, .right {
+  /* 字體 */
+  font-family: "Wt07", Serif;
+}
+
+.left {
+  /* 置右＋白色 */
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.left .chinese {
+  font-size: 2rem;
+}
+
+.left .english {
+  font-size: 1.28rem;
+}
+
+a.right {
+  color: white;
+  letter-spacing: 3px;
+}
+
+a.right span {
+  font-size: 2rem;
+}
+
+.activity-layout hr {
+  margin-bottom: 70px;
+  color: white;
+  border: 4px;
+  width: 100%;
+  height: 4px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  hr {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  hr {
+    width: 31vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  hr {
+    display: none;
+  }
+}
