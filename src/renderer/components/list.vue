@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import ClassRoom from '@/mixins/class'
+import ClassRoom from '~/mixins/class'
 
 export default {
   props: {
@@ -24,13 +24,13 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-@import "@/assets/components/list-and-detail.scss";
+<style scoped>
+@import "@/assets/components/list-and-detail.css";
 
 .activity {
   display: flex;
   flex-wrap: wrap;
-  outline: white .5rem solid;
+  outline: white 0.5rem solid;
   padding: 0;
   margin: 0;
   /* 毛玻璃 */
@@ -39,16 +39,15 @@ export default {
 .class-room {
   width: 20%;
 }
-
 a.class-room {
   color: white;
   margin: 30px 0;
   text-align: center;
-  span {
-    font-size: 2.0rem;
-  }
   letter-spacing: 3px;
   /* Google Font */
   font-family: "Wt12", Serif;
+}
+a.class-room span {
+  font-size: 2rem;
 }
 </style>

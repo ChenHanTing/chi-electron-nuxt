@@ -6,7 +6,6 @@
 </template>
 
 <script>
-// 5
 const props = {
   link: {
     type: String,

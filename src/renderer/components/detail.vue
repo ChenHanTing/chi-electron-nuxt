@@ -68,35 +68,26 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 @import "~/assets/components/list-and-detail.css";
 
+/* 輪播區高度 */
 .slide-container {
-  /* 輪播區高度 */
   height: 55vh;
 }
-
-.right {
-  a + a {
-    margin-left: 20px;
-  }
-
-  a {
-    /* 字體 */
-    span {
-      font-size: 2.0rem;
-    }
-    font-family: "Wt07", Serif;
-    color: white;
-    letter-spacing: 3px;
-  }
+.right a + a {
+  margin-left: 20px;
 }
-
-.right {
-  span {
-    &:hover {
-      color: yellow;
-    }
-  }
+.right a {
+  /* 字體 */
+  font-family: "Wt07", Serif;
+  color: white;
+  letter-spacing: 3px;
+}
+.right a span {
+  font-size: 2rem;
+}
+.right span:hover {
+  color: yellow;
 }
 </style>
