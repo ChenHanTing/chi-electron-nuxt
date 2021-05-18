@@ -22,7 +22,11 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: [
+    '~/assets/mixins/base.scss',
+    '~/assets/mixins/font.scss',
+    '~/assets/mixins/anime.scss',
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
