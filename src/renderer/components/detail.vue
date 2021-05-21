@@ -54,7 +54,15 @@ export default {
           return require(`../assets/images/${this.entryType}/${this.titleId}/${i+1}.jpg`);
         } catch(error) {
           console.log('Error:', error);
-          return require(`@/assets/images/default/${i+1}.jpg`);
+          try {
+            console.log('What is e:', e);
+            /* 找不到路徑 */
+            // return require(e);
+            return require(`../assets/images/${this.entryType}/${this.titleId}/${i+1}.JPG`);
+          } catch(errorError) {
+            console.log('ErrorError:', errorError);
+            return require(`@/assets/images/default/${i+1}.jpg`);
+          }
         }
       })
     }
