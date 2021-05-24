@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import {equals} from 'ramda';
+
 const props = {
   link: {
     type: String,
@@ -23,7 +25,8 @@ const props = {
 
 const computed = {
   hasDomainName() {
-    return /^(http|https)/.test(this.link);
+    return /^(http|https)/.test(this.link) ||
+           equals(this.link, '/ebook/mobile/index.html');
   },
 };
 
