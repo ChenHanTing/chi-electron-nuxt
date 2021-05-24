@@ -93,8 +93,3 @@ build/
 
 Graduate-DVD-win32-x64
 Graduate-DVD-win32-x64.zip
-
-# images 所有的東西，但不包含index, default資料夾
-src/renderer/assets/images
-!src/renderer/assets/images/index
-!src/renderer/assets/images/default
