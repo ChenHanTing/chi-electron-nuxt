@@ -17,9 +17,17 @@
 import { map } from "ramda";
 import ClassRoom from '~/mixins/class'
 import PhotoSwiper from '~/components/photo-swiper'
-import {photoNum} from "~/constant/website";
+import {photoNum, gallery} from "~/constant/website";
+
+const data = function () {
+  return {
+    gallery,
+  }
+}
+
 
 export default {
+  data,
   props: {
     titleEn: String,
   },
@@ -40,7 +48,7 @@ export default {
     /* 相關照片 */
     relatedImages() {
       return map(
-        e => `../assets/images/${this.entryType}/${this.titleId}/${e}.jpg`,
+        e => `../assets/images/${gallery}/${this.gallery}/${this.entryType}/${this.titleId}/${e}.jpg`,
         Array.from({length: photoNum}, (_, i) => i + 1)
       )
     },
@@ -51,14 +59,14 @@ export default {
           console.log('What is e:', e);
           /* 找不到路徑 */
           // return require(e);
-          return require(`../assets/images/${this.entryType}/${this.titleId}/${i+1}.jpg`);
+          return require(`../assets/images/${this.gallery}/${this.entryType}/${this.titleId}/${i+1}.jpg`);
         } catch(error) {
           console.log('Error:', error);
           try {
             console.log('What is e:', e);
             /* 找不到路徑 */
             // return require(e);
-            return require(`../assets/images/${this.entryType}/${this.titleId}/${i+1}.JPG`);
+            return require(`../assets/images/${this.gallery}/${this.entryType}/${this.titleId}/${i+1}.JPG`);
           } catch(errorError) {
             console.log('ErrorError:', errorError);
             return require(`@/assets/images/default/${i+1}.jpg`);
@@ -102,5 +110,15 @@ export default {
 .title-section {
   display: flex;
   justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 </style>

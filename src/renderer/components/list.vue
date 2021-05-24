@@ -50,5 +50,15 @@ a.class-room {
 a.class-room span {
   font-size: 2rem;
 }
+
+.container {
+  width: 80%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
 </style>
 

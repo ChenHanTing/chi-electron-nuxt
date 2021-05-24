@@ -4,8 +4,8 @@
       h1 {{ school }}
     .index-subtitle
       h2 {{ schoolEnglish }}
-    .row
-      entry-cloud.col-4(
+    .clouds
+      entry-cloud.cloud(
         v-for="entry in entryLink"
         :entry-image="entry.image"
         :entry-text="entry.text"
@@ -76,6 +76,13 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  width: 100%;
+}
+
+.clouds {
+  display: flex;
+}
 /*======== title ========*/
 .index-title {
   margin-top: 130px;
