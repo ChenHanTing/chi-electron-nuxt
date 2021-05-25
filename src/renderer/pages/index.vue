@@ -53,7 +53,7 @@ const data = function () {
       { image: CloudLeft, link: '/class', text: '畢業班級', top: 43, left: 30 },
       { image: CloudMiddle, link: '/activity', text: '校園生活照', top: 45, left: 24 },
       { image: CloudRight, text: '畢冊電子書', top: 42, left: 24,
-        link: '/ebook/mobile/index.html' },
+        link: `http://super-ninenine.synology.me/${ebookName}/mobile/index.html` },
     ],
     otherImages: {
       airplane: Airplane,

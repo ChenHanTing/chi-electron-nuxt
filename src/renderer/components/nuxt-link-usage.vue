@@ -25,8 +25,7 @@ const props = {
 
 const computed = {
   hasDomainName() {
-    return /^(http|https)/.test(this.link) ||
-           equals(this.link, '/ebook/mobile/index.html');
+    return /^(http|https)/.test(this.link)
   },
 };
 
