@@ -3,7 +3,6 @@
 export const school = '板橋國中'
 export const schoolEnglish = 'New Taipei Municipal Banqiao Junior High School'
 export const ebookName = 'pcjh-ebook'
-export const gallery = 'banqiao'
 export const photoNum = 5
 
 export const classNum = [
@@ -17,7 +16,6 @@ export const classNum = [
 // export const school = '萬華國中'
 // export const schoolEnglish = 'Taipei Municipal Wan Hua Junior High School'
 // export const ebookName = 'whjhs-ebook'
-// export const gallery = 'wanhua'
 // export const photoNum = 5
 //
 // export const classNum = [

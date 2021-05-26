@@ -93,3 +93,7 @@ build/
 
 Graduate-DVD-win32-x64
 Graduate-DVD-win32-x64.zip
+
+src/renderer/assets/images
+!src/renderer/assets/images/index
+!src/renderer/assets/images/default

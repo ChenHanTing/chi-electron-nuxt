@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import {equals} from 'ramda';
 
 const props = {
   link: {

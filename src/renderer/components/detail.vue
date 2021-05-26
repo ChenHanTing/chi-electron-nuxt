@@ -19,6 +19,7 @@ import ClassRoom from '~/mixins/class'
 import PhotoSwiper from '~/components/photo-swiper'
 import {photoNum, gallery} from "~/constant/website";
 
+/* 為了讓貴如比較好懂而新增的參數，但目前用不到了 */
 const data = function () {
   return {
     gallery,
@@ -48,7 +49,7 @@ export default {
     /* 相關照片 */
     relatedImages() {
       return map(
-        e => `../assets/images/${gallery}/${this.gallery}/${this.entryType}/${this.titleId}/${e}.jpg`,
+        e => `../assets/images/${this.entryType}/${this.titleId}/${e}.jpg`,
         Array.from({length: photoNum}, (_, i) => i + 1)
       )
     },
@@ -59,14 +60,14 @@ export default {
           console.log('What is e:', e);
           /* 找不到路徑 */
           // return require(e);
-          return require(`../assets/images/${this.gallery}/${this.entryType}/${this.titleId}/${i+1}.jpg`);
+          return require(`../assets/images/${this.entryType}/${this.titleId}/${i+1}.jpg`);
         } catch(error) {
           console.log('Error:', error);
           try {
             console.log('What is e:', e);
             /* 找不到路徑 */
             // return require(e);
-            return require(`../assets/images/${this.gallery}/${this.entryType}/${this.titleId}/${i+1}.JPG`);
+            return require(`../assets/images/${this.entryType}/${this.titleId}/${i+1}.JPG`);
           } catch(errorError) {
             console.log('ErrorError:', errorError);
             return require(`@/assets/images/default/${i+1}.jpg`);
